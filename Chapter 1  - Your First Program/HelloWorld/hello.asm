@@ -8,11 +8,7 @@
 
 	msg db "hello, world", 0
 	
-section .bss
-
-section .text
-	
-	global main
+.code
 
 main:
 	mov rax, 1			; 1 = write
