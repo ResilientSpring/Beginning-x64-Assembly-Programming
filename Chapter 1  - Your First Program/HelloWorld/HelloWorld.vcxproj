@@ -134,7 +134,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <MASM Include="hello.asm" />
+    <MASM Include="hello.asm">
+      <EnableMASM51Compatibility Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</EnableMASM51Compatibility>
+    </MASM>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
