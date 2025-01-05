@@ -1,6 +1,10 @@
 ;hello.asm
 
-section .data
+.686
+.model small
+.stack 100h
+
+.data
 
 	msg db "hello, world", 0
 	
