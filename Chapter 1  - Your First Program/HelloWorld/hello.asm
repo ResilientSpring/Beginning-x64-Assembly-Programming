@@ -1,6 +1,6 @@
 ;hello.asm
 
-section . data
+section .data
 
 	msg db "hello, world", 0
 	
